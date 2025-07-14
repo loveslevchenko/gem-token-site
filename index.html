@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GEM Token</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo-final-embedded.svg" type="image/svg+xml" />
 </head>
+
 <body>
-  <div class="container">
-    <object data="logo-final-embedded.svg" type="image/svg+xml" class="logo"></object>
+  <header>
+    <img src="assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" class="logo" />
     <h1>GEM Token</h1>
-    <p class="intro">GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
-
-    <div class="button-group">
-      <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank" class="button">View on Etherscan</a>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank" class="button">Trade on Uniswap</a>
-      <a href="https://github.com/loveslevchenko/gem-token-site" target="_blank" class="button">GitHub Source</a>
+    <p>GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
+    <div class="buttons">
+      <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">View on Etherscan</a>
+      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">Trade on Uniswap</a>
+      <a href="https://github.com/loveslevchenko/gem-token-site" target="_blank">GitHub Source</a>
+      <a href="#contact">Contact Us</a>
     </div>
-  </div>
+  </header>
 
-  <section class="section">
-    <h2>Roadmap</h2>
-    <ul class="roadmap">
-      <li><strong>Q2 2025:</strong> GEM Token launch & Uniswap listing ✅</li>
-      <li><strong>Q3 2025:</strong> Marketing campaign and community building 🔄</li>
-      <li><strong>Q4 2025:</strong> Partnership announcements & NFT integration 🔜</li>
-    </ul>
+  <section class="section" id="roadmap">
+    <div class="card">
+      <h2>Roadmap</h2>
+      <p><strong>Q2 2025:</strong> GEM Token launch & Uniswap listing ✅</p>
+      <p><strong>Q3 2025:</strong> Marketing campaign and community building 📢</p>
+      <p><strong>Q4 2025:</strong> Exchange listings and staking programs 🔄</p>
+    </div>
   </section>
 
-  <section class="section">
-    <h2>Team</h2>
-    <p>GEM Token is built by a passionate team of blockchain enthusiasts dedicated to transparency and innovation in Web3.</p>
+  <section class="section" id="team">
+    <div class="card">
+      <h2>Team</h2>
+      <p>GEM Token is built by a passionate team of blockchain enthusiasts dedicated to transparency and innovation in Web3.</p>
+    </div>
   </section>
 
-  <section class="section subscribe">
-    <h2>Subscribe</h2>
-    <p>Get updates on GEM Token.</p>
-    <form action="https://formspree.io/f/mjkobzyy" method="POST">
-      <input type="email" name="email" placeholder="Your email" required />
-      <input type="text" name="_gotcha" style="display:none" />
-      <button type="submit">Subscribe</button>
-    </form>
+  <section class="section" id="subscribe">
+    <div class="card">
+      <h2>Subscribe</h2>
+      <p>Get updates on GEM Token.</p>
+      <form action="https://formspree.io/f/xvgqpywn" method="POST" class="form">
+        <input type="email" name="email" placeholder="Your email" required />
+        <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam field -->
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
   </section>
 
-  <section class="section contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or suggestions, feel free to reach out.</p>
-    <form action="https://formspree.io/f/mjkobzyy" method="POST">
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <input type="text" name="_gotcha" style="display:none" />
-      <button type="submit">Send Message</button>
-    </form>
+  <section class="section" id="contact">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or suggestions, feel free to reach out.</p>
+      <form action="https://formspree.io/f/xvgqpywn" method="POST" class="form">
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam field -->
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    © 2025 GEM Token. All rights reserved.
+    <p>&copy; 2025 GEM Token. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
