@@ -3,49 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GEM Token</title>
+  <title>GEM Token | Official Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #f9f9f9, #e9f0f8);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    header {
       text-align: center;
-      padding: 40px;
+      margin-bottom: 2rem;
+    }
+    header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
     }
     h1 {
-      color: #2c3e50;
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
     }
     .buttons a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background-color: #2c3e50;
+      padding: 0.75rem 1.5rem;
+      background: #5b72ee;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
     .buttons a:hover {
-      background-color: #34495e;
+      background: #3b53cc;
     }
-    .logo {
-      max-width: 120px;
-      margin-bottom: 20px;
+    section {
+      max-width: 900px;
+      margin-top: 2rem;
+    }
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.8rem;
+      color: #333;
+    }
+    footer {
+      margin-top: 5rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <img src="https://raw.githubusercontent.com/gem-token-assets/assets/main/assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" class="logo">
-  
-  <h1>Welcome to GEM Token</h1>
-  <p>GEM is a community-driven utility token with real-world use and growing ecosystem.</p>
+  <header>
+    <img src="https://raw.githubusercontent.com/loveslevchenko/gem-token-assets/main/assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" />
+    <h1>Welcome to GEM Token</h1>
+    <p>
+      GEM is a community-driven utility token with real-world use and a growing ecosystem. Transparent, secure, and made for people.
+    </p>
+    <div class="buttons">
+      <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">View on Etherscan</a>
+      <a href="https://app.uniswap.org/#/pools" target="_blank">Uniswap Pool</a>
+      <a href="https://t.me/gemtoken" target="_blank">Telegram</a>
+    </div>
+  </header>
 
-  <div class="buttons">
-    <a href="https://etherscan.io/address/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">View on Etherscan</a>
-    <a href="https://app.uniswap.org/positions/v4/ethereum/33610" target="_blank">Uniswap Pool</a>
-    <a href="https://t.me/YourTelegramLinkHere" target="_blank">Telegram</a>
-  </div>
+  <section>
+    <h2>Tokenomics</h2>
+    <p><strong>Total Supply:</strong> 1,000,000 GEM</p>
+    <p><strong>Liquidity Pool:</strong> 36,680 GEM & 0.023 ETH</p>
+    <p><strong>Token Contract:</strong> 0xCAC6...34eD</p>
+  </section>
+
+  <section>
+    <h2>Roadmap</h2>
+    <ul>
+      <li>✅ GEM Token launched</li>
+      <li>✅ Website & Etherscan profile created</li>
+      <li>🚀 Telegram & Uniswap listing</li>
+      <li>🪙 CoinGecko & CMC application</li>
+      <li>🌍 Social media campaign</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How to Buy</h2>
+    <p>
+      You can buy GEM on Uniswap. Connect your MetaMask wallet, go to the Uniswap Pool, and swap ETH for GEM.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 GEM Token. All rights reserved.
+  </footer>
 
 </body>
 </html>
