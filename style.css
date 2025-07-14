@@ -119,6 +119,41 @@ a.button:hover {
   background-color: #3457cc;
 }
 
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.contact input[type="email"],
+.contact textarea {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact button {
+  background-color: #4e79ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.contact button:hover {
+  background-color: #3457cc;
+}
+
 footer {
   text-align: center;
   font-size: 0.9rem;
