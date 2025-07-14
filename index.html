@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEM Token</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <img src="assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" class="logo" />
-    <h1>GEM Token</h1>
-    <p>GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
-    <div class="buttons">
-      <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">View on Etherscan</a>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">Trade on Uniswap</a>
-      <a href="https://github.com/loveslevchenko/gem-token-site" target="_blank">GitHub Source</a>
-      <a href="#contact">Contact Us</a>
-    </div>
-  </header>
-
-  <section class="section" id="roadmap">
+  <section class="section">
     <div class="card">
-      <h2>Roadmap</h2>
-      <p><strong>Q2 2025:</strong> GEM Token launch & Uniswap listing ✅</p>
-      <p><strong>Q3 2025:</strong> Marketing campaign and community building 📢</p>
-      <p><strong>Q4 2025:</strong> Exchange listings and staking programs 🔄</p>
+      <h1>GEM Token</h1>
+      <p>GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
+      <div class="button-group">
+        <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" class="button">View on Etherscan</a>
+        <a href="https://app.uniswap.org" class="button">Trade on Uniswap</a>
+        <a href="https://github.com/loveslevchenko/gem-token-site" class="button">GitHub Source</a>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="team">
+  <section class="section">
     <div class="card">
       <h2>Team</h2>
       <p>GEM Token is built by a passionate team of blockchain enthusiasts dedicated to transparency and innovation in Web3.</p>
     </div>
   </section>
 
-  <section class="section" id="subscribe">
+  <section class="section">
     <div class="card">
       <h2>Subscribe</h2>
       <p>Get updates on GEM Token.</p>
-      <form action="https://formspree.io/f/xvgqpywn" method="POST" class="form">
+      <form action="https://formspree.io/f/mjkobzyy" method="POST">
         <input type="email" name="email" placeholder="Your email" required />
-        <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam field -->
         <button type="submit">Subscribe</button>
       </form>
     </div>
@@ -53,18 +41,45 @@
     <div class="card">
       <h2>Contact Us</h2>
       <p>If you have any questions or suggestions, feel free to reach out.</p>
-      <form action="https://formspree.io/f/xvgqpywn" method="POST" class="form">
+      <form id="contact-form" action="https://formspree.io/f/xvgqpywn" method="POST">
         <input type="email" name="email" placeholder="Your email" required />
         <textarea name="message" placeholder="Your message" required></textarea>
-        <input type="text" name="_gotcha" style="display:none" /> <!-- Anti-spam field -->
         <button type="submit">Send Message</button>
       </form>
+      <p id="contact-success" style="display:none; margin-top: 1rem; color: green;">
+        ✅ Thank you, your message has been sent. We will get back to you shortly.
+      </p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 GEM Token. All rights reserved.</p>
+    <p>© 2025 GEM Token. All rights reserved.</p>
   </footer>
-</body>
 
+  <script>
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('contact-success');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        successMsg.style.display = 'block';
+      } else {
+        successMsg.textContent = '❌ Something went wrong. Please try again.';
+        successMsg.style.display = 'block';
+        successMsg.style.color = 'red';
+      }
+    });
+  </script>
+</body>
 </html>
