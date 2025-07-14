@@ -1,162 +1,135 @@
-* {
-  box-sizing: border-box;
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(145deg, #f0f4ff, #d4dfff);
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f8;
   color: #333;
-  padding: 40px 20px;
-  min-height: 100vh;
 }
 
 .container {
-  background: #ffffffcc;
-  border-radius: 20px;
-  padding: 30px 40px;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .logo {
-  width: 180px;
-  height: 180px;
-  display: block;
-  margin: 0 auto 20px;
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: white;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #333;
+.hero {
   text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, #dfe6f3, #e8f0ff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.intro {
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .button-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
-a.button {
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 30px;
-  background-color: #4e79ff;
+.button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: #007bff;
   color: white;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease-in-out;
 }
 
-a.button:hover {
-  background-color: #3457cc;
+.button:hover {
+  background: #0056b3;
 }
 
 .section {
-  max-width: 700px;
-  margin: 0 auto 40px;
-  background: #ffffffcc;
-  padding: 30px 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  margin-top: 3rem;
 }
 
-.roadmap {
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
   list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
+  padding: 0;
 }
 
-.roadmap li {
-  margin-bottom: 12px;
-  font-size: 1rem;
+.card ul li {
+  padding: 0.3rem 0;
 }
 
-.subscribe form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.subscribe input[type="email"] {
-  padding: 10px 15px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
-  min-width: 220px;
-}
-
-.subscribe button {
-  background-color: #4e79ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.subscribe button:hover {
-  background-color: #3457cc;
-}
-
-.contact form {
+form {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 10px;
+  gap: 1rem;
 }
 
-.contact input[type="email"],
-.contact textarea {
-  padding: 10px 15px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
+input[type="email"],
+textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
   width: 100%;
+  box-sizing: border-box;
 }
 
-.contact textarea {
+textarea {
   resize: vertical;
-  min-height: 100px;
 }
 
-.contact button {
-  background-color: #4e79ff;
+button[type="submit"] {
+  padding: 0.7rem;
+  background-color: #007bff;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
   font-weight: bold;
-  align-self: flex-start;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.contact button:hover {
-  background-color: #3457cc;
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
-footer {
+#contact-success {
+  color: green;
+  font-weight: 500;
+}
+
+.footer {
   text-align: center;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #777;
-  padding-bottom: 20px;
+  color: #666;
+  margin-top: 3rem;
 }
