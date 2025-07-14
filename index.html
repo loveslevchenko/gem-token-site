@@ -4,20 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEM Token</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <img src="https://raw.githubusercontent.com/loveslevchenko/gem-token-assets/main/assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" class="logo"/>
-
-    <h1>GEM Token</h1>
-    <p class="subtitle">GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
-
-    <div class="button-group">
-      <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">View on Etherscan</a>
-      <a href="https://app.uniswap.org/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank">Trade on Uniswap</a>
-      <a href="https://github.com/loveslevchenko/gem-token-site" target="_blank">GitHub Source</a>
-    </div>
+    <header>
+      <img src="assets/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD/logo.png" alt="GEM Token Logo" class="logo">
+      <h1>GEM Token</h1>
+      <p>GEM is a decentralized token built on Ethereum for transparent and community-driven growth.</p>
+      <div class="buttons">
+        <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" class="button">View on Etherscan</a>
+        <a href="https://app.uniswap.org/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" class="button">Trade on Uniswap</a>
+        <a href="https://github.com/loveslevchenko/gem-token-site" class="button">GitHub Source</a>
+      </div>
+    </header>
 
     <section class="card">
       <h2>Roadmap</h2>
@@ -33,9 +33,9 @@
     <section class="card">
       <h2>Subscribe</h2>
       <p>Get updates on GEM Token.</p>
-      <form action="https://formspree.io/f/xvgqpywn" method="POST">
-        <input type="email" name="email" placeholder="Your email" required/>
-        <input type="text" name="_gotcha" style="display:none"/>
+      <form action="https://formspree.io/f/mjkobzyy" method="POST">
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="hidden" name="_gotcha" style="display:none">
         <button type="submit">Subscribe</button>
       </form>
     </section>
@@ -43,17 +43,37 @@
     <section class="card">
       <h2>Contact Us</h2>
       <p>If you have any questions or suggestions, feel free to reach out.</p>
-      <form action="https://formspree.io/f/mjkobzyy" method="POST">
-        <input type="email" name="email" placeholder="Your email" required/>
+      <form action="https://formspree.io/f/xvgqpywn" method="POST" onsubmit="showMessage(event)">
+        <input type="email" name="email" placeholder="Your email" required>
         <textarea name="message" placeholder="Your message" required></textarea>
-        <input type="text" name="_gotcha" style="display:none"/>
+        <input type="hidden" name="_gotcha" style="display:none">
         <button type="submit">Send Message</button>
       </form>
+      <p id="confirmation" class="hidden">Thank you, your message has been sent. We will get back to you shortly.</p>
     </section>
 
     <footer>
       <p>© 2025 GEM Token. All rights reserved.</p>
     </footer>
   </div>
+
+  <script>
+    function showMessage(e) {
+      e.preventDefault();
+      const form = e.target;
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          form.reset();
+          document.getElementById("confirmation").classList.remove("hidden");
+        } else {
+          alert("There was a problem submitting the form. Please try again.");
+        }
+      });
+    }
+  </script>
 </body>
 </html>
