@@ -31,6 +31,12 @@ header {
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background: #00bcd4;
+  color: white;
 }
 
 main {
@@ -50,7 +56,7 @@ footer {
   color: #666;
 }
 
-/* ✅ ROADMAP STYLES */
+/* ✅ ROADMAP SECTION */
 .roadmap {
   background-color: #f9f9f9;
   padding: 50px 20px;
@@ -91,4 +97,26 @@ footer {
 .milestone ul li {
   margin-bottom: 8px;
   font-size: 0.95em;
+}
+
+/* ✅ ABOUT / TEAM SECTION */
+.about {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
 }
