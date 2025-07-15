@@ -65,7 +65,7 @@
 
           <button type="submit">Send Message</button>
         </form>
-        <p id="confirmation-message" style="display:none; color: green; margin-top: 10px;">
+        <p id="confirmation-message" style="display:none;">
           Thank you, we will contact you shortly.
         </p>
       </div>
@@ -94,6 +94,7 @@
       if (response.ok) {
         form.reset();
         confirmation.style.display = "block";
+        confirmation.style.color = "green";
       } else {
         confirmation.innerHTML = "There was a problem. Please try again.";
         confirmation.style.color = "red";
