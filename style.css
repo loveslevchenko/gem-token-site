@@ -1,114 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GEM Token</title>
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <img src="logo.png" alt="GEM Token Logo" class="logo">
-      <h1>GEM Token</h1>
-      <p class="subtitle">Secure. Transparent. Community-driven.</p>
-      <a href="https://t.me/gemtoken_official" class="button" target="_blank">Join Telegram</a>
-    </div>
-  </header>
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #f0fcff);
+  color: #333;
+}
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to GEM Token</h2>
-      <p>The future of decentralized utility is here.</p>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank" class="button">Buy on Uniswap</a>
-    </section>
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
 
-    <section id="roadmap" class="roadmap">
-      <h2>Roadmap</h2>
-      <div class="timeline">
-        <div class="milestone">
-          <h3>Q2 2025</h3>
-          <ul>
-            <li>✅ GEM Token launched on Ethereum</li>
-            <li>✅ Website and logo released</li>
-            <li>✅ Custom domain connected</li>
-          </ul>
-        </div>
-        <div class="milestone">
-          <h3>Q3 2025</h3>
-          <ul>
-            <li>📢 Launch Telegram and X (Twitter)</li>
-            <li>🤝 First community building</li>
-            <li>💧 Add liquidity to Uniswap</li>
-          </ul>
-        </div>
-        <div class="milestone">
-          <h3>Q4 2025</h3>
-          <ul>
-            <li>📈 Submit to CoinGecko & CoinMarketCap</li>
-            <li>🎁 Airdrop for early supporters</li>
-            <li>🚀 Start marketing & partnerships</li>
-          </ul>
-        </div>
-        <div class="milestone">
-          <h3>2026+</h3>
-          <ul>
-            <li>📱 Develop dApp</li>
-            <li>🔐 Add staking, DAO, utility</li>
-            <li>🌍 Expand globally</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+a:hover {
+  text-decoration: underline;
+}
 
-    <section id="about" class="about">
-      <h2>About the Project</h2>
-      <p>
-        GEM Token is a community-driven ERC-20 token built to support secure, transparent, and decentralized digital assets.
-        Our goal is to empower holders and build a strong Web3 ecosystem around GEM.
-      </p>
-      <p>
-        The project is led by a small, decentralized team of crypto enthusiasts, developers, and designers who believe in
-        open finance and transparency. We’re committed to long-term development and community growth.
-      </p>
-    </section>
+/* Header */
+header {
+  background: #00bcd4;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    <section id="community" class="community">
-      <h2>Join the Community</h2>
-      <p>Follow us on social media for updates</p>
-      <div class="social-links">
-        <a href="https://t.me/gemtoken_official" class="social-button" target="_blank">Telegram</a>
-        <a href="https://x.com/GemTokenETH" class="social-button" target="_blank">X</a>
-        <a href="https://github.com/loveslevchenko/gem-token-site" class="social-button" target="_blank">GitHub</a>
-      </div>
-    </section>
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
 
-    <section id="subscribe" class="subscribe">
-      <h2>Stay Updated</h2>
-      <p>Subscribe to receive news and announcements from GEM Token</p>
-      <form action="https://formspree.io/f/xrgndnrv" method="POST" class="subscribe-form">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <input type="text" name="_gotcha" style="display:none">
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
+/* Buttons */
+.button,
+.social-button,
+.subscribe-form button,
+.contact-form button {
+  background: #00bcd4;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/xrgndnrv" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <input type="text" name="_gotcha" style="display:none">
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+.button:hover,
+.social-button:hover,
+.subscribe-form button:hover,
+.contact-form button:hover {
+  background: #0097a7;
+}
 
-  <footer>
-    <p>Contact us: <a href="mailto:info@gem-token.site">info@gem-token.site</a></p>
-    <p>&copy; 2025 GEM Token. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Main content spacing */
+main {
+  padding: 40px 20px;
+}
+
+/* Roadmap */
+.roadmap {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.roadmap h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.milestone {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #00bcd4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.milestone h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.milestone ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.milestone li {
+  margin-bottom: 8px;
+  font-size: 0.95em;
+}
+
+/* About */
+.about {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Community */
+.community {
+  padding: 50px 20px;
+  background-color: #f0faff;
+  text-align: center;
+}
+
+.community h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.community p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-button {
+  display: inline-block;
+}
+
+/* Subscribe */
+.subscribe {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.subscribe h2 {
+  font-size: 2em;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+
+.subscribe p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Contact */
+.contact {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Footer */
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+footer a {
+  color: #00bcd4;
+}
