@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GEM Token</title>
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="logo-final-embedded.svg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="assets/logo.png" alt="GEM Token Logo" class="logo">
+      <img src="logo-final-embedded.svg" alt="GEM Token Logo" class="logo" />
       <h1>GEM Token</h1>
       <p class="subtitle">Secure. Transparent. Community-driven.</p>
-      <a href="https://t.me/gemtoken_official" class="button" target="_blank">Join Telegram</a>
+      <div class="header-buttons">
+        <a href="https://etherscan.io/token/0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" class="button" target="_blank">View on Etherscan</a>
+        <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" class="button" target="_blank">Trade on Uniswap</a>
+        <a href="https://github.com/loveslevchenko/gem-token-site" class="button" target="_blank">GitHub Source</a>
+        <a href="https://t.me/gemtoken_official" class="button" target="_blank">Telegram</a>
+        <a href="https://x.com/GemTokenETH" class="button" target="_blank">X</a>
+      </div>
     </div>
   </header>
 
@@ -21,7 +27,6 @@
     <section class="hero">
       <h2>Welcome to GEM Token</h2>
       <p>The future of decentralized utility is here.</p>
-      <a href="https://app.uniswap.org/#/swap?outputCurrency=0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD" target="_blank" class="button">Buy on Uniswap</a>
     </section>
 
     <section id="roadmap" class="roadmap">
@@ -30,33 +35,33 @@
         <div class="milestone">
           <h3>Q2 2025</h3>
           <ul>
-            <li>✅ GEM Token created and deployed on Ethereum</li>
-            <li>✅ Website and logo launched</li>
-            <li>✅ Connected to custom domain</li>
+            <li>GEM Token launched on Ethereum</li>
+            <li>Website and logo published</li>
+            <li>Connected to custom domain</li>
           </ul>
         </div>
         <div class="milestone">
           <h3>Q3 2025</h3>
           <ul>
-            <li>📢 Launch Telegram and X (Twitter)</li>
-            <li>🤝 First community engagement</li>
-            <li>💧 Add liquidity to Uniswap</li>
+            <li>Telegram and X (Twitter) launch</li>
+            <li>Community building</li>
+            <li>Liquidity on Uniswap</li>
           </ul>
         </div>
         <div class="milestone">
           <h3>Q4 2025</h3>
           <ul>
-            <li>📈 Submit to CoinGecko and CoinMarketCap</li>
-            <li>🎁 Airdrop for early subscribers</li>
-            <li>🚀 Marketing and partnerships</li>
+            <li>Apply to CMC/CG listings</li>
+            <li>First airdrop</li>
+            <li>Marketing and partnerships</li>
           </ul>
         </div>
         <div class="milestone">
           <h3>2026+</h3>
           <ul>
-            <li>📱 dApp development</li>
-            <li>🔐 Staking and DAO features</li>
-            <li>🌍 Global expansion</li>
+            <li>Launch dApp</li>
+            <li>Staking and DAO integration</li>
+            <li>Global expansion</li>
           </ul>
         </div>
       </div>
@@ -76,10 +81,10 @@
 
     <section id="community" class="community">
       <h2>Join the Community</h2>
-      <p>Stay connected and follow our latest updates</p>
+      <p>Stay connected and follow our latest updates:</p>
       <div class="social-links">
         <a href="https://t.me/gemtoken_official" class="social-button" target="_blank">Telegram</a>
-        <a href="https://x.com/gemtoken" class="social-button" target="_blank">X</a>
+        <a href="https://x.com/GemTokenETH" class="social-button" target="_blank">X</a>
         <a href="https://github.com/loveslevchenko/gem-token-site" class="social-button" target="_blank">GitHub</a>
       </div>
     </section>
@@ -88,9 +93,19 @@
       <h2>Stay Updated</h2>
       <p>Subscribe to receive news and announcements from GEM Token</p>
       <form action="https://formspree.io/f/xrgndnrv" method="POST" class="subscribe-form">
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <input type="text" name="_gotcha" style="display:none">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="text" name="_gotcha" style="display:none" />
         <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xrgndnrv" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
