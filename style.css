@@ -1,110 +1,113 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
+  padding: 0;
+  background: #f3f7fb;
   color: #222;
 }
 
 header {
   text-align: center;
   padding: 40px 20px 20px;
-  background-color: #e0f7fa;
-  border-bottom: 1px solid #ccc;
+  background: linear-gradient(to bottom, #e1f1f9, #f3f7fb);
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 50%;
+  width: 120px;
+  height: auto;
   margin-bottom: 10px;
 }
 
 h1 {
-  margin: 10px 0;
+  margin: 10px 0 5px;
   font-size: 2.5em;
+  color: #111;
 }
 
-.tagline {
-  font-size: 1.1em;
+header p {
+  margin: 0 0 20px;
+  font-size: 1.2em;
   color: #555;
 }
 
-.button-group {
-  margin-top: 20px;
+.buttons {
+  margin: 20px 0;
 }
 
-.btn {
-  display: inline-block;
-  margin: 5px;
-  padding: 10px 16px;
-  background-color: #0288d1;
-  color: white;
+.buttons a {
   text-decoration: none;
+  background: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  margin: 5px;
   border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.3s;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.btn:hover {
-  background-color: #0277bd;
+.buttons a:hover {
+  background: #0056b3;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 section {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 1.8em;
-  color: #0288d1;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
 ul {
   padding-left: 20px;
 }
 
-.subscribe form {
+form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  max-width: 400px;
 }
 
-.subscribe input[type="email"] {
+input[type="email"] {
+  flex: 1;
   padding: 10px;
-  font-size: 1em;
-  width: 250px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 1em;
 }
 
-.subscribe button {
+button {
   padding: 10px 20px;
-  font-size: 1em;
-  background-color: #0288d1;
+  background: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 1em;
   cursor: pointer;
 }
 
-.subscribe button:hover {
-  background-color: #0277bd;
+button:hover {
+  background: #0056b3;
 }
 
 footer {
+  background: #f1f1f1;
   text-align: center;
   padding: 20px;
-  background-color: #e0f7fa;
-  border-top: 1px solid #ccc;
   font-size: 0.9em;
+  color: #666;
 }
 
 footer a {
-  color: #0288d1;
+  color: #007bff;
   text-decoration: none;
 }
 
