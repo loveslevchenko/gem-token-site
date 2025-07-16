@@ -104,5 +104,41 @@
   <footer class="footer">
     <p>© 2025 GEM Token. All rights reserved.</p>
   </footer>
+  <!-- Add JAM Token to MetaMask -->
+<button onclick="addTokenToMetaMask()">➕ Add JAM to MetaMask</button>
+
+<script>
+  const tokenAddress = '0xВСТАВЬ_ТВОЙ_АДРЕС_КОНТРАКТА'; // ← здесь адрес JamToken
+  const tokenSymbol = 'JAM';
+  const tokenDecimals = 18;
+  const tokenImage = 'https://loveslevchenko.github.io/gem-token-site/logo.png';
+
+  async function addTokenToMetaMask() {
+    try {
+      const wasAdded = await window.ethereum.request({
+        method: 'wallet_watchAsset',
+        params: {
+          type: 'ERC20',
+          options: {
+            address: tokenAddress,
+            symbol: tokenSymbol,
+            decimals: tokenDecimals,
+            image: tokenImage,
+          },
+        },
+      });
+
+      if (wasAdded) {
+        alert('JAM Token was added to MetaMask!');
+      } else {
+        alert('Token was not added.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Something went wrong. Check MetaMask connection.');
+    }
+  }
+</script>
+  
 </body>
 </html>
