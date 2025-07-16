@@ -169,6 +169,7 @@ button:hover {
   background-color: #4b4be0;
   color: #fff;
   border: none;
+  border: 2px solid red;
   padding: 12px 20px;
   margin-top: 16px;
   margin-bottom: 50px;
