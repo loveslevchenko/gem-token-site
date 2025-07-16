@@ -104,13 +104,11 @@
   <footer class="footer">
     <p>© 2025 GEM Token. All rights reserved.</p>
   </footer>
-  <!-- Add JAM Token to MetaMask -->
-<button onclick="addTokenToMetaMask()">➕ Add JAM to MetaMask</button>
 
 <script>
-  const tokenAddress = '0xВСТАВЬ_ТВОЙ_АДРЕС_КОНТРАКТА'; // ← здесь адрес JamToken
-  const tokenSymbol = 'JAM';
-  const tokenDecimals = 18;
+  const tokenAddress = '0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD';
+  const tokenSymbol = 'GEM';
+  const tokenDecimals = 13;
   const tokenImage = 'https://loveslevchenko.github.io/gem-token-site/logo.png';
 
   async function addTokenToMetaMask() {
@@ -129,7 +127,7 @@
       });
 
       if (wasAdded) {
-        alert('JAM Token was added to MetaMask!');
+        alert('GEM Token was added to MetaMask!');
       } else {
         alert('Token was not added.');
       }
