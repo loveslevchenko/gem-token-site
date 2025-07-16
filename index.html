@@ -111,11 +111,6 @@
   </footer>
 
 <script>
-  const tokenAddress = '0xCAC6dA2753F1CD483b542FA93663bF5A3eC434eD';
-  const tokenSymbol = 'GEM';
-  const tokenDecimals = 13;
-  const tokenImage = 'https://loveslevchenko.github.io/gem-token-site/logo.png';
-
   async function addTokenToMetaMask() {
     try {
       const wasAdded = await window.ethereum.request({
@@ -123,22 +118,22 @@
         params: {
           type: 'ERC20',
           options: {
-            address: tokenAddress,
-            symbol: tokenSymbol,
-            decimals: tokenDecimals,
-            image: tokenImage,
+            address: '0xCAC6dA2753F1C043b542FA74c80cDaB298b0bB71',
+            symbol: 'GEM13',
+            decimals: 18,
+            image: 'https://raw.githubusercontent.com/loveslevchenko/gem-token-site/main/logo-final-embedded.svg',
           },
         },
       });
 
       if (wasAdded) {
-        alert('GEM Token was added to MetaMask!');
+        alert('✅ GEM13 Token was added to MetaMask!');
       } else {
-        alert('Token was not added.');
+        alert('⚠️ Token was not added.');
       }
     } catch (error) {
       console.error(error);
-      alert('Something went wrong. Check MetaMask connection.');
+      alert('❌ Something went wrong. Check MetaMask connection.');
     }
   }
 </script>
